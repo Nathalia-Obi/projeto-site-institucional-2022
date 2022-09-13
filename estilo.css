@@ -1,57 +1,122 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-* {
-    margin: 0%;
+* 
+{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "barlow", sans-serif;
+  }
+  
+  header {
+    background-color: black;
+    border-bottom: 2px solid #32b9cd;
+    padding: 15px ;
+  }
+  
+  .container {
+    width: 80%;
+    color:black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .titulo{
+    color: #32b9cd;
+    font-size: 14px;
+  }
+  
+  .navegação{
+    color: #efb661;
+  }
+  
+  .navegação ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
+  
+  .navegação ul li{
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+
+.agora {
+    font-weight: bold;
+}
+
+
+
+  /* CONTEÚDO DA PÁGINA */
+  /* BANNER */
+  .banner{
+    background-image: url("./assets/img/bg-jelly-fish-para_outras_pags.png") ;
+    padding: 100PX 0;
+    background-size: cover;
+  }
+  
+  .banner .container {
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner p{
+    color: #FFF;
+    font-size: 36px;
+    width: 280px;
+  }
+  
+  .social{
+      margin: 50px 0;
+  }
+  
+  .social .caixas{
+    display: flex;
+  }
+  
+
+
+
+  .caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .caixa h4{
+    margin: 15px 0;
+    color: #e6005a;
+  }
+  
+  .caixa p{
+    text-align: center;
+  }
+  
+  .caixa img{
+    width: 170px;;
+  }
+  
+  footer{
+    background-color: #32b9cd;
+    padding: 45px 0;
     
-    }
-    .header{
-        background-color: black;
-        border-bottom: 3px solid #32b9cd;
-        padding: 15px;
-    
-    }
-    body{
+  }
 
-font-family: "barlow", sans-serif;
+  footer .container{
+    justify-content: center;
+  }
 
-    }
-    
-    
-    .container {
-        display: flex;
-        width: 80%;
-        color: white;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
-    
-    .titulo {
-
-        color: #32b9cd;
-        font-size: 14px;
-
-    }
-
-    .navegacao{
-        color: #efb66e;
-    }
-
-    .navegacao ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        width: 350px;
-    }
-
-    .navegacao ul li{
-font-size: 14px;
-cursor: pointer;
-
-    }
+  footer p{
+    color: #FFF;
+  }
